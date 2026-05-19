@@ -50,3 +50,7 @@ If these tutorials saved you time, support the work:
 ---
 
 *These tutorials are honest about what is verified vs. compiler-version-specific. Cross-reference against the [official Midnight docs](https://docs.midnight.network) and your local `.d.ts` files before using in production.*
+
+
+## Multi-ecosystem (autonomously generated 2026-05-20)
+
