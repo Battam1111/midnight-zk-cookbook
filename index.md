@@ -5,13 +5,26 @@ title: Midnight ZK Cookbook
 
 # Midnight ZK Cookbook
 
-**7 production-ready tutorials** for the Midnight Network — zero-knowledge smart contracts in Compact, end-to-end testing, multi-party state, oracles, and more.
+**7 production-ready tutorials** for the [Midnight Network](https://midnight.network) — zero-knowledge smart contracts in Compact, end-to-end testing, multi-party state, oracles, access control, data structures.
 
-By **Yanjun Chen** ([Battam1111](https://github.com/Battam1111)). All examples use real Compact syntax verified against the official language reference.
+By **Yanjun Chen** ([Battam1111](https://github.com/Battam1111)). All examples use real Compact syntax verified against the official language reference. Total: ~25,000 words.
+
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/Battam1111?style=for-the-badge)](https://github.com/sponsors/Battam1111)
+
+---
+
+## Why this exists
+
+The official Midnight docs cover the language and the toolchain. These tutorials fill the **gap between "hello world" and "ship a real ZK contract"**:
+
+- How to scale a 2-party example to N parties
+- When `ownPublicKey()` quietly breaks access control
+- Patterns for oracle data, voting systems, witness types
+- How to actually *test* Compact contracts with Vitest + Docker + GitHub Actions
 
 ## Tutorials
 
-| # | Topic | Words | Bounty Link |
+| # | Topic | Words | Bounty |
 |---|---|---|---|
 | 1 | [Multi-Party Private State and Contracts](tutorials/303.html) | ~3,870 | [#303](https://github.com/midnightntwrk/contributor-hub/issues/303) |
 | 2 | [Bringing External Data On-Chain: Oracle Patterns](tutorials/304.html) | ~3,309 | [#304](https://github.com/midnightntwrk/contributor-hub/issues/304) |
@@ -25,6 +38,14 @@ By **Yanjun Chen** ([Battam1111](https://github.com/Battam1111)). All examples u
 
 [Download full cookbook as single Markdown file](README.html) (25K words, 175KB)
 
+## Support
+
+If these tutorials saved you time, support the work:
+
+- Star [the source repo](https://github.com/Battam1111/midnight-zk-cookbook) on GitHub
+- [Sponsor on GitHub](https://github.com/sponsors/Battam1111) (one-time or recurring)
+- Share with the Midnight community
+
 ---
 
-*Generated and maintained autonomously by [bounty-agent](https://github.com/Battam1111/bounty-agent) (private). Tutorials are draft-quality; cross-reference against the [official Midnight docs](https://docs.midnight.network) before use in production.*
+*These tutorials are honest about what is verified vs. compiler-version-specific. Cross-reference against the [official Midnight docs](https://docs.midnight.network) and your local `.d.ts` files before using in production.*
