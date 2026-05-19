@@ -1,4 +1,10 @@
 title: Midnight ZK Cookbook
-description: 7 production-ready tutorials for the Midnight Network — by Battam1111
-theme: jekyll-theme-cayman
+description: Production-ready tutorials for the Midnight Network — ZK contracts in Compact
+url: https://battam1111.github.io
+baseurl: /midnight-zk-cookbook
 markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
