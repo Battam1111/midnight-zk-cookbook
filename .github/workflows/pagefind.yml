@@ -1,0 +1,37 @@
+name: Build Pagefind index
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  pagefind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Install Jekyll + build
+        run: |
+          gem install jekyll bundler
+          jekyll build -d _site
+      - name: Generate Pagefind index
+        run: npx -y pagefind --site _site --serve false
+      - name: Move pagefind into source
+        run: |
+          mkdir -p pagefind
+          cp -r _site/pagefind/* pagefind/ 2>/dev/null || true
+      - name: Commit pagefind index
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "github-actions[bot]"
+          git add pagefind/
+          git diff --quiet --cached || git commit -m "chore: rebuild pagefind index"
+          git push || true
