@@ -50,3 +50,9 @@ If these tutorials saved you time, support the work:
 ---
 
 *These tutorials are honest about what is verified vs. compiler-version-specific. Cross-reference against the [official Midnight docs](https://docs.midnight.network) and your local `.d.ts` files before using in production.*
+
+
+## 中文教程 (Chinese tutorials)
+
+- [测试 Compact 合约:单元测试、断言与本地仿真](tutorials-cn/312.html) — 10458 字
+- [Midnight 上的多方私密状态与合约](tutorials-cn/303-multi-party-private-state-and-contracts-between-two-users.html) — 8429 字
