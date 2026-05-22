@@ -104,7 +104,34 @@ description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Proj
 
 </div>
 
-<h2>Monthly subscriptions <span class="tag recurring">recurring</span></h2>
+<h2 id="radar">Bounty Radar — Monthly subscriptions <span class="tag recurring">recurring</span></h2>
+
+<p>The free public feed at <a href="https://battam1111.github.io/bounty-radar-data/">battam1111.github.io/bounty-radar-data</a> refreshes every 30 minutes — fine if you check it manually. The paid tiers push alerts to you so you don't miss a bounty.</p>
+
+<div style="margin: 1rem 0; overflow-x: auto;">
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+<thead style="background: #f3f3f3;">
+<tr><th style="padding: 8px 12px; text-align: left;">Feature</th><th>Free</th><th>$19/mo Hobbyist</th><th>$97/mo Pro</th><th>$497/mo Team</th></tr>
+</thead>
+<tbody>
+<tr><td style="padding: 6px 12px;">Live web feed at battam1111.github.io/bounty-radar-data/</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">JSON / RSS / per-ecosystem sub-feeds</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">MCP server access (Claude / Cursor)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;"><strong>Push to your Telegram on new match</strong></td><td>—</td><td>1 filter</td><td>unlimited filters</td><td>unlimited filters</td></tr>
+<tr><td style="padding: 6px 12px;"><strong>Webhook delivery</strong> (HMAC-signed, to your URL)</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">Filter by ecosystem / reward / keywords</td><td>—</td><td>1 ecosystem</td><td>combine all</td><td>combine all</td></tr>
+<tr><td style="padding: 6px 12px;">Weekly digest email</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">Shared Slack / Discord channel for team</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">Custom detector requests for zk-pipeline-doctor</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">Seats included</td><td>—</td><td>1</td><td>1</td><td>up to 5</td></tr>
+<tr><td style="padding: 6px 12px;"></td><td></td><td><a class="btn" href="https://polar.sh/checkout/polar_c_BbZbN6eJnZ7rwsUfT1pMsj4lTftwnfMoGdWBo0KozKU">Subscribe</a></td><td><a class="btn" href="https://polar.sh/checkout/polar_c_CKKhyOq11BHuG2AulflWkm53YU98pLdrNo22h3OlB4O">Subscribe</a></td><td><a class="btn" href="https://polar.sh/checkout/polar_c_bT1FpxfzlShI3PcdHxTrHeJf8EVO1AFaWbFc90Z9mfC">Subscribe</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size: 13px; color: #666;">After subscribing, you receive a one-time setup email with your Telegram bot link or webhook endpoint registration command. All deliveries are HMAC-signed; you control the secret. Cancel anytime from your Polar customer portal.</p>
+
+<h2>Monthly subscriptions — checkout shortcuts <span class="tag recurring">recurring</span></h2>
 <div class="pricing-grid">
 
 <div class="card">
