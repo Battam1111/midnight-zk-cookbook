@@ -4375,3 +4375,18 @@ If these tutorials saved you time, the cookbook stays free forever — but you c
 - 🛠️ **[Cookbook + zk-doctor Pro License — $49](https://polar.sh/checkout/polar_c_aGRfgpddGyhB9LOTBSLvkBlsYJlMMo6M8muFX2rPXtk)** — everything above plus priority support on the OSS tool + custom detector requests
 
 Powered by [Polar](https://polar.sh) — direct payment, no middleman markup.
+
+
+## 🎯 Bounty Radar Pro — paid SaaS
+
+Live since today: a real-time bounty intelligence feed across 11 ecosystems
+(Algora + GitHub labels + Drips Wave + Code4rena + Bountycaster + Midnight +
+Aleo + Noir + Aztec + Stacks + Starknet + Mina + risc0). Updates every 30 min.
+
+- 📡 **Free public feed**: https://battam1111.github.io/bounty-radar-data/
+- 💎 **[Hobbyist $19/mo](https://polar.sh/checkout/polar_c_BbZbN6eJnZ7rwsUfT1pMsj4lTftwnfMoGdWBo0KozKU)** — Telegram channel + scoring
+- 🚀 **[Pro $97/mo](https://polar.sh/checkout/polar_c_CKKhyOq11BHuG2AulflWkm53YU98pLdrNo22h3OlB4O)** — real-time API + competitor heat-map + merge-probability
+- 🏢 **[Team $497/mo](https://polar.sh/checkout/polar_c_bT1FpxfzlShI3PcdHxTrHeJf8EVO1AFaWbFc90Z9mfC)** — 10 seats + white-label + custom detectors
+
+We run this scanner 24/7 anyway for our own cookbook work — paid tiers fund the
+infrastructure and unlock real-time access.
