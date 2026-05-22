@@ -1,4 +1,8 @@
-# https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
-github: Battam1111
-polar: Battam1111
-custom: ["https://battam1111.github.io/midnight-zk-cookbook/"]
+# GitHub Sponsors + Polar.sh funding config.
+# After enabling GitHub Sponsors on this account at github.com/sponsors,
+# the heart icon appears next to "Star" on this repo and routes here.
+
+github: [Battam1111]
+custom:
+  - "https://battam1111.github.io/midnight-zk-cookbook/pricing.html"
+  - "https://polar.sh/Battam1111"
