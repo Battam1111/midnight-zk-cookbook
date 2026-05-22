@@ -7,9 +7,7 @@ ecosystem: cross
 
 # ZK Rollup Architecture Explained: zkSync vs Linea vs Polygon zkEVM (2026)
 
-Below is an engineering-oriented overview. One constraint up front: I do **not** have live web access, so I cannot honestly claim verified **2026** dashboard values. Where you asked for “real production numbers,” I use **publicly reported production ranges available through mid-2024** from sources such as **L2BEAT, growthepie, and project explorers**, and I label them as such rather than inventing 2026 figures.
-
-# ZK rollups vs optimistic rollups: an architectural overview
+Below is an engineering-oriented overview. Production numbers cited below are drawn from publicly reported ranges through mid-2024 (L2BEAT, growthepie, project explorers); they should be cross-checked against current dashboards before being used in any official analysis. # ZK rollups vs optimistic rollups: an architectural overview
 
 Rollups all do the same high-level trick: execute transactions off Ethereum, but keep Ethereum as the settlement layer. The two dominant families differ in **how Ethereum is convinced the offchain execution was correct**.
 
