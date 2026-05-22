@@ -1,0 +1,23 @@
+name: IndexNow ping
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'pagefind/**'
+      - 'audits/**'
+      - 'feed.xml'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ping IndexNow
+        run: |
+          # Wait a bit so Pages build finishes
+          sleep 90
+          # Submit homepage + sitemap to IndexNow
+          curl -s "https://api.indexnow.org/indexnow?url=https://battam1111.github.io/midnight-zk-cookbook/&key=f7d3b89a4c1e42a690b3e58c6c1d4f7e" || true
+          curl -s "https://api.indexnow.org/indexnow?url=https://battam1111.github.io/midnight-zk-cookbook/sitemap.xml&key=f7d3b89a4c1e42a690b3e58c6c1d4f7e" || true
+          curl -s "https://api.indexnow.org/indexnow?url=https://battam1111.github.io/midnight-zk-cookbook/pricing.html&key=f7d3b89a4c1e42a690b3e58c6c1d4f7e" || true
+          echo "IndexNow pings sent"

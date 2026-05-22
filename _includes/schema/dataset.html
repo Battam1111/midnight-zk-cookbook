@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "{{ page.dataset_name | default: 'ZK Bounty Radar Feed' }}",
+  "description": "{{ page.description | default: 'Live feed of open zero-knowledge bounties scraped every 30 minutes across 11+ ZK ecosystems.' }}",
+  "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "license": "https://opensource.org/licenses/MIT",
+  "creator": {
+    "@type": "Person",
+    "name": "Battam1111",
+    "url": "https://github.com/Battam1111"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://battam1111.github.io/bounty-radar-data/feed.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://battam1111.github.io/bounty-radar-data/feed.xml",
+      "encodingFormat": "application/rss+xml"
+    }
+  ],
+  "temporalCoverage": "2026-05/..",
+  "keywords": "zero-knowledge, ZK, bounty, Aleo, Noir, Midnight, Cairo, Risc0"
+}
+</script>

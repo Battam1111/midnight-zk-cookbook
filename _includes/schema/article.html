@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "{{ page.title | jsonify | strip_newlines | remove: '"' }}",
+  "description": "{{ page.description | default: site.description | jsonify | strip_newlines | remove: '"' }}",
+  "author": {
+    "@type": "Person",
+    "name": "Battam1111",
+    "url": "https://github.com/Battam1111"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Battam1111",
+    "url": "https://github.com/Battam1111"
+  },
+  "datePublished": "{{ page.date | default: '2026-05-22' | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | default: '2026-05-22' | date_to_xmlschema }}",
+  "mainEntityOfPage": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "image": "{{ site.url }}{{ site.baseurl }}/og.png",
+  "about": "Zero-knowledge programming, {{ page.ecosystem | default: 'cross-ecosystem' }}",
+  "inLanguage": "{{ page.lang | default: 'en' }}",
+  "isAccessibleForFree": true
+}
+</script>

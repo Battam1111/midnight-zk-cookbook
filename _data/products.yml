@@ -1,0 +1,53 @@
+# Single source of truth for the 7 paid products.
+# Used by:
+#   - pricing.md (renders pricing table)
+#   - _includes/schema/product.html (emits Product JSON-LD)
+
+- id: bundle
+  name: "ZK Cookbook Bundle"
+  description: "Every tutorial in this cookbook as a single Markdown file plus the companion code repositories, delivered as a 300KB ZIP."
+  price: "15.00"
+  recurring: false
+  checkout_url: "https://polar.sh/checkout/polar_c_6CqAq70gZIe8bmUOyrKMYQkLSYXS7t9aY3yxy4TFovi"
+
+- id: playbook
+  name: "ZK Bounty Hunter Playbook"
+  description: "Seven-chapter PDF on finding, evaluating, and winning ZK bounties across Aleo, Noir, Midnight, Aztec, RISC Zero and more. ~50 pages."
+  price: "29.00"
+  recurring: false
+  checkout_url: "https://polar.sh/checkout/polar_c_rtEpLig3NXQmT8aLSh0esDlQEy43HK8wWrjS44VZaIC"
+
+- id: pro
+  name: "Cookbook + zk-doctor Pro License"
+  description: "ZK Cookbook bundle plus a Pro license for zk-pipeline-doctor (priority detector updates, private fork support)."
+  price: "49.00"
+  recurring: false
+  checkout_url: "https://polar.sh/checkout/polar_c_aGRfgpddGyhB9LOTBSLvkBlsYJlMMo6M8muFX2rPXtk"
+
+- id: audit
+  name: "ZK Project Pre-Flight Report"
+  description: "Automated diagnostic audit by zk-pipeline-doctor plus narrative review. Pre-flight check BEFORE paying $10-50k for a human security audit; NOT a substitute. Delivered within 24h."
+  price: "99.00"
+  recurring: false
+  checkout_url: "https://polar.sh/checkout/polar_c_gXO0FivhPZEULEbuWnpznkLPFdL2Koz68AvG93YoWFb"
+
+- id: radar-hobbyist
+  name: "Bounty Radar Hobbyist"
+  description: "Monthly subscription. Real-time ZK bounty alerts via Telegram, filtered by ecosystem. Up to 50 alerts/month."
+  price: "19.00"
+  recurring: true
+  checkout_url: "https://polar.sh/checkout/polar_c_BbZbN6eJnZ7rwsUfT1pMsj4lTftwnfMoGdWBo0KozKU"
+
+- id: radar-pro
+  name: "Bounty Radar Pro"
+  description: "Monthly subscription. Unlimited alerts, custom filters by reward/language/repo, webhook delivery, priority detector requests."
+  price: "97.00"
+  recurring: true
+  checkout_url: "https://polar.sh/checkout/polar_c_CKKhyOq11BHuG2AulflWkm53YU98pLdrNo22h3OlB4O"
+
+- id: radar-team
+  name: "Bounty Radar Team"
+  description: "Monthly subscription for teams. All Pro features plus shared Slack/Discord delivery, custom detector requests for zk-pipeline-doctor, multi-seat."
+  price: "497.00"
+  recurring: true
+  checkout_url: "https://polar.sh/checkout/polar_c_bT1FpxfzlShI3PcdHxTrHeJf8EVO1AFaWbFc90Z9mfC"

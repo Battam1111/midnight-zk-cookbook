@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Cookbook",
+      "item": "{{ site.url }}{{ site.baseurl }}/"
+    }{% if page.breadcrumb_section %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.breadcrumb_section }}",
+      "item": "{{ site.url }}{{ site.baseurl }}/{{ page.breadcrumb_section_slug }}/"
+    }{% endif %}{% if page.title %},
+    {
+      "@type": "ListItem",
+      "position": {% if page.breadcrumb_section %}3{% else %}2{% endif %},
+      "name": "{{ page.title | jsonify | strip_newlines | remove: '"' }}",
+      "item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    }{% endif %}
+  ]
+}
+</script>

@@ -8,3 +8,12 @@ defaults:
       path: ""
     values:
       layout: default
+
+# Added by Wave 1 SEO upgrade
+twitter_handle: "Battam1111"
+author: "Battam1111"
+lang: en
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

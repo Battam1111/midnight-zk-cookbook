@@ -1,0 +1,34 @@
+{% comment %} Product schema rendered from _data/products.yml — pricing page only {% endcomment %}
+{% for product in site.data.products %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{ product.name }}",
+  "description": "{{ product.description }}",
+  "image": "{{ site.url }}{{ site.baseurl }}/og.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "Battam1111"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ product.checkout_url }}",
+    "price": "{{ product.price }}",
+    "priceCurrency": "USD",
+    {% if product.recurring %}"priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "{{ product.price }}",
+      "priceCurrency": "USD",
+      "billingDuration": "P1M",
+      "billingIncrement": 1
+    },{% endif %}
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Person",
+      "name": "Battam1111"
+    }
+  }
+}
+</script>
+{% endfor %}

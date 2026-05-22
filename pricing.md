@@ -2,6 +2,9 @@
 layout: default
 title: "Pricing — ZK Cookbook + Bounty Radar Pro"
 description: "All products from the ZK Cookbook + Bounty Radar Pro stack — from $15 one-shot to $497/mo team tier. Pick what fits."
+schema: product
+og_type: website
+description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Project Pre-Flight Report, and Bounty Radar subscriptions."
 ---
 
 <style>
