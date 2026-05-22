@@ -4398,3 +4398,17 @@ Aleo + Noir + Aztec + Stacks + Starknet + Mina + risc0). Updates every 30 min.
 
 We run this scanner 24/7 anyway for our own cookbook work — paid tiers fund the
 infrastructure and unlock real-time access.
+
+---
+
+<!-- related-projects:start -->
+
+## Related projects
+
+- [**zk-pipeline-doctor**](https://github.com/Battam1111/zk-pipeline-doctor) — OSS CLI for auditing ZK projects (6 detectors)
+- [**zk-doctor-action**](https://github.com/Battam1111/zk-doctor-action) — GitHub Action wrapping the CLI — 5-min install
+- [**zk-doctor-bot**](https://github.com/Battam1111/zk-doctor-bot) — GitHub App: deeper, model-narrated PR reviews
+- [**bounty-radar-data**](https://github.com/Battam1111/bounty-radar-data) — Live ZK bounty feed (JSON + RSS + HTML)
+- [**bounty-radar-mcp**](https://github.com/Battam1111/bounty-radar-mcp) — MCP server — query the radar from Claude / Cursor / any MCP client
+
+<!-- related-projects:end -->
