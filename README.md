@@ -4355,7 +4355,11 @@ When containerized integration tests fail in GitHub Actions, logs are often the 
 - **Use real syntax from Compact primer** — Compact snippets use verified constructs from the reference: `ledger`, `export circuit`, `Uint<32>`, `[]`, and `disclose(...)`.
 - **Do not invent undocumented Midnight-specific APIs** — handled explicitly in “Binding the real generated `Contract` class” and “Pitfalls and common errors”; version-specific generated runtime methods are deferred to emitted `.d.ts` files and example repository inspection.
 
-## Sibling project
+## Sibling projects
+
+- **[bounty-radar-mcp](https://github.com/Battam1111/bounty-radar-mcp)** — MCP server so any Claude / Cursor / Windsurf user can query the live Bounty Radar feed from inside their editor.
+
+## Original sibling
 
 [zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor) — a CLI tool that diagnoses ZK circuit projects (Aleo, Noir, Compact, Cairo, risc0) for common health issues. Built alongside this cookbook from the lessons of writing publish-ready tutorials.
 
