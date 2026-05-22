@@ -4371,7 +4371,7 @@ This cookbook covers tutorials across multiple ZK ecosystems:
 
 If these tutorials saved you time, the cookbook stays free forever — but you can buy the bundled / Pro tier to fund continued work:
 
-- 💎 **[ZK Cookbook Bundle — $15](https://sandbox.polar.sh/checkout/polar_c_bd2BRATE4orx1MzIchI5GX6HJH3vf87ZUAyDX3HO2lA)** — 11 tutorials as a single .md + .zip download, lifetime updates
-- 🛠️ **[Cookbook + zk-doctor Pro License — $49](https://sandbox.polar.sh/checkout/polar_c_h8ZzuaM0cPfYxk8qbMTURYshs291a7KEa6kYd3U27hH)** — everything above plus priority support on the OSS tool + custom detector requests
+- 💎 **[ZK Cookbook Bundle — $15](https://polar.sh/checkout/polar_c_6CqAq70gZIe8bmUOyrKMYQkLSYXS7t9aY3yxy4TFovi)** — 11 tutorials as a single .md + .zip download, lifetime updates
+- 🛠️ **[Cookbook + zk-doctor Pro License — $49](https://polar.sh/checkout/polar_c_aGRfgpddGyhB9LOTBSLvkBlsYJlMMo6M8muFX2rPXtk)** — everything above plus priority support on the OSS tool + custom detector requests
 
 Powered by [Polar](https://polar.sh) — direct payment, no middleman markup.
