@@ -1,5 +1,7 @@
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/Battam1111?style=flat-square&logo=github)](https://github.com/sponsors/Battam1111) [![Polar](https://img.shields.io/badge/polar-fund_issue-cyan?style=flat-square)](https://polar.sh/Battam1111) [![Site](https://img.shields.io/badge/site-midnight--zk--cookbook-blueviolet?style=flat-square)](https://battam1111.github.io/midnight-zk-cookbook/)
 
+**[→ Full pricing page (7 products, FAQ, trust signals)](https://battam1111.github.io/midnight-zk-cookbook/pricing.html)**
+
 # Midnight ZK Cookbook
 **7 production-ready tutorials for the Midnight Network bounty programs**
 
