@@ -91,7 +91,8 @@ description: "All products from the ZK Cookbook + Bounty Radar Pro stack — fro
     A diagnostic audit of your ZK project (Aleo / Noir / Compact / Cairo / risc0) by zk-pipeline-doctor + a senior reviewer LLM. Designed as a pre-flight check before paying for a $10-50k human audit.
   </div>
   <ul>
-    <li>PDF/HTML report delivered via email within 24h</li>
+    <li><a href="https://battam1111.github.io/bounty-radar-data/audits/sample.html" target="_blank"><strong>See sample report →</strong></a></li>
+    <li>HTML/Markdown report delivered via email within 24h</li>
     <li>6 detectors: language, tests, CI, docs, security, reproducibility</li>
     <li>Prioritized fix list with concrete commands</li>
   </ul>
