@@ -1,0 +1,47 @@
+name: Build Pagefind index
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  pagefind:
+    # Loop protection: skip when our own commit triggered the push
+    if: "!contains(github.event.head_commit.message, 'rebuild pagefind index')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Ruby (fixes gem install permission error)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - name: Install Jekyll
+        run: gem install jekyll bundler
+      - name: Build Jekyll site
+        run: jekyll build -d _site
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Generate Pagefind index
+        run: npx -y pagefind --site _site
+      - name: Move pagefind into source
+        run: |
+          mkdir -p pagefind
+          cp -r _site/pagefind/* pagefind/ 2>/dev/null || true
+      - name: Commit pagefind index
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "github-actions[bot]"
+          git add pagefind/
+          if git diff --quiet --cached; then
+            echo "no pagefind changes to commit"
+          else
+            git commit -m "chore: rebuild pagefind index [skip ci]"
+            git push
+          fi
