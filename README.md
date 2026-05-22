@@ -4374,6 +4374,8 @@ If these tutorials saved you time, the cookbook stays free forever — but you c
 - 💎 **[ZK Cookbook Bundle — $15](https://polar.sh/checkout/polar_c_6CqAq70gZIe8bmUOyrKMYQkLSYXS7t9aY3yxy4TFovi)** — 11 tutorials as a single .md + .zip download, lifetime updates
 - 🛠️ **[Cookbook + zk-doctor Pro License — $49](https://polar.sh/checkout/polar_c_aGRfgpddGyhB9LOTBSLvkBlsYJlMMo6M8muFX2rPXtk)** — everything above plus priority support on the OSS tool + custom detector requests
 
+- 📘 **[ZK Bounty Hunter Playbook — $29](https://polar.sh/checkout/polar_c_rtEpLig3NXQmT8aLSh0esDlQEy43HK8wWrjS44VZaIC)** — 50-page field guide to winning ZK/Web3 bounties in 2026, compiled from operational data + 7 LIVE submissions + full tooling architecture. Markdown bundle + per-chapter splits.
+
 Powered by [Polar](https://polar.sh) — direct payment, no middleman markup.
 
 
