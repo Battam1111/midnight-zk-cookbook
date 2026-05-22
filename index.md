@@ -112,7 +112,7 @@ If these tutorials saved you time, support the work:
 
 ## 中文教程 (Chinese tutorials)
 
-- [303-multi-party-private-state-and-contracts-between-two-users](tutorials-cn/303-multi-party-private-state-and-contracts-between-two-users.html) — 1043 字
-- [312](tutorials-cn/312.html) — 1298 字
-- [5 分钟把 zk-doctor 接入你的 ZK 项目 CI](tutorials-cn/zk-doctor-github-action.html) — 926 字
-- [ZK 语言对比：Compact vs Leo vs Noir vs Cairo（2026）](tutorials-cn/zk-language-comparison.html) — 1954 字
+- [303-multi-party-private-state-and-contracts-between-two-users](tutorials-cn/303-multi-party-private-state-and-contracts-between-two-users.html) — 2,528 字
+- [312](tutorials-cn/312.html) — 1,648 字
+- [5 分钟把 zk-doctor 接入你的 ZK 项目 CI](tutorials-cn/zk-doctor-github-action.html) — 1,476 字
+- [ZK 语言对比：Compact vs Leo vs Noir vs Cairo（2026）](tutorials-cn/zk-language-comparison.html) — 4,321 字
