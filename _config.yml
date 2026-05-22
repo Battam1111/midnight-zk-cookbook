@@ -13,7 +13,3 @@ defaults:
 twitter_handle: "Battam1111"
 author: "Battam1111"
 lang: en
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
