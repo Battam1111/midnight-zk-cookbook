@@ -4354,3 +4354,14 @@ When containerized integration tests fail in GitHub Actions, logs are often the 
 - **Working code repository with test suite and CI config** — repository layout, Compact contract example, simulator code, unit test, integration test, and `.github/workflows/ci.yml` are provided in the draft; generated `Contract` binding is explicitly described as derived from compiled output `.d.ts` files.
 - **Use real syntax from Compact primer** — Compact snippets use verified constructs from the reference: `ledger`, `export circuit`, `Uint<32>`, `[]`, and `disclose(...)`.
 - **Do not invent undocumented Midnight-specific APIs** — handled explicitly in “Binding the real generated `Contract` class” and “Pitfalls and common errors”; version-specific generated runtime methods are deferred to emitted `.d.ts` files and example repository inspection.
+
+## Sibling project
+
+[zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor) — a CLI tool that diagnoses ZK circuit projects (Aleo, Noir, Compact, Cairo, risc0) for common health issues. Built alongside this cookbook from the lessons of writing publish-ready tutorials.
+
+## Multi-ecosystem coverage
+
+This cookbook covers tutorials across multiple ZK ecosystems:
+- **Midnight (Compact)**: tutorials 289, 291, 295, 296, 303, 304, 312
+- **Aleo (Leo)**: aleo-first-contract, aleo-program-testing
+- **Noir (Aztec)**: noir-circuit-basics, noir-testing-debugging
