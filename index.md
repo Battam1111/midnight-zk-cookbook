@@ -5,7 +5,7 @@ title: Midnight ZK Cookbook
 
 # The ZK Cookbook
 
-**13 production-ready tutorials** spanning Midnight Compact, Aleo Leo, Noir (Aztec), RISC Zero zkVM, and cross-ecosystem architecture. By **Yanjun Chen** ([Battam1111](https://github.com/Battam1111)). Total: ~42,676 words.
+**17 production-ready tutorials** spanning Midnight Compact, Aleo Leo, Noir (Aztec), RISC Zero zkVM, and cross-ecosystem architecture. By **Yanjun Chen** ([Battam1111](https://github.com/Battam1111)). Total: ~54,200 words.
 
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/Battam1111?style=for-the-badge)](https://github.com/sponsors/Battam1111) [![Pricing](https://img.shields.io/badge/Pricing-purchase-purple?style=for-the-badge)](pricing.html) [![Bounty Radar](https://img.shields.io/badge/Live-bounty%20radar-blue?style=for-the-badge)](https://battam1111.github.io/bounty-radar-data/)
 
@@ -61,13 +61,24 @@ All payment via [Polar.sh](https://polar.sh) (Merchant of Record). 14-day money-
 
 - **[Writing Your First Noir Circuit: Fields, Constraints, and Proofs](tutorials/noir-circuit-basics.html)** — ~3,330 words
   <br>_This tutorial is written against the Noir documentation pages fetched on 2026-05-20, specifically the dev docs that note the latest stable version as v1.0.0-beta.21. Where behavior may differ across releases, you should verify against your …_
+- **[Building a Zero-Knowledge Identity Proof in Noir](tutorials/noir-identity-proof.html)** — ~2,328 words
+  <br>_This tutorial builds a small but real Noir circuit for private identity proofs:_
 - **[Testing and Debugging Noir Circuits: The Honest Workflow](tutorials/noir-testing-debugging.html)** — ~3,369 words
   <br>_This tutorial is written against the Noir documentation snapshot fetched 2026-05-20, specifically the dev docs that also point readers to v1.0.0-beta.21 as the latest version in the navigation. Everything below stays within syntax and conce…_
 
+### RISC Zero (zkVM)
+
+- **[RISC Zero zkVM: Running Existing Rust Code Inside a STARK](tutorials/risc0-zkvm-rust.html)** — ~3,053 words
+  <br>_If you already write Rust and you’re curious about zero-knowledge systems, Risc0 is one of the most ergonomic entry points because it lets you prove execution of ordinary Rust code instead of rewriting everything as arithmetic constraints._
+
 ### Cross-ecosystem
 
+- **[Aztec Accounts vs Aleo Records — Privacy Models Deep Dive](tutorials/aztec-aleo-privacy-models.html)** — ~3,065 words
+  <br>_Below is a protocol-engineering comparison of Aztec and Aleo as they actually model private state today: both are hybrids, but they put the “privacy primitive” in very different places._
 - **[ZK Language Comparison: Compact vs Leo vs Noir vs Cairo (2026)](tutorials/zk-language-comparison.html)** — ~3,169 words
   <br>_- Compact, Leo, and Cairo are primarily chain/application languages. - Noir is primarily a circuit language that becomes a chain language only when paired with Aztec’s contract framework._
+- **[ZK Rollup Architecture Explained: zkSync vs Linea vs Polygon zkEVM (2026)](tutorials/zk-rollup-architecture.html)** — ~3,078 words
+  <br>_Below is an engineering-oriented overview. One constraint up front: I do not have live web access, so I cannot honestly claim verified 2026 dashboard values. Where you asked for “real production numbers,” I use publicly reported production …_
 
 ### Dev tools / CI
 
