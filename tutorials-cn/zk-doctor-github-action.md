@@ -9,7 +9,7 @@ ecosystem: cross
 
 如果你用 Compact、Leo、Noir、Cairo 或 Risc0 Rust 编写零知识(zero-knowledge, ZK)代码，你一定很熟悉一个问题：**你很难一眼判断一个 ZK 仓库是否已经达到生产可用状态**。README 看起来没问题。测试都通过了。CI 也是绿色。结果六个月后，有人尝试发布时才发现工具链没有固定版本(toolchain pinned)、缺少锁文件(lockfile)、两个检测器(detector)悄悄失败了，而且安全检查清单(security checklist)从未执行过。
 
-这篇教程会把 [`zk-doctor`](https://github.com/Battam1111/zk-pipeline-doctor) 作为 GitHub Action 接入，这样每次 push 和每次 pull request 都会自动生成健康度报告(health report)。不需要后台守护进程(background daemon)、不需要额外账户、也没有持续费用。审计(audit)由六个彼此独立的检测器组成，覆盖语言约定(language conventions)、测试、CI、文档、安全性和可复现性(reproducibility)——最终输出为一个总分，以及一个按优先级排序、附带具体命令的修复列表。
+这篇教程会把 [`zk-doctor`](https://github.com/Battam1111/zk-pipeline-doctor) 作为 GitHub Action 接入，这样每次 push 和每次 pull request 都会自动生成健康度报告(health report)。不需要后台守护进程(background daemon)、不需要额外账户、也没有持续费用。审计(audit)由六个彼此独立的检测器组成，覆盖语言约定(language conventions)、测试、CI、文档、安全性和可复现性(reproducibility),,最终输出为一个总分，以及一个按优先级排序、附带具体命令的修复列表。
 
 读完本文后，你的 CI 页面会看起来和其他现代仓库一样：项目健康时显示绿色对勾，发生回退(regress)时显示红色 X，并且在 PR 上附带一个 Markdown 报告，说明该修什么。
 
@@ -21,7 +21,7 @@ ecosystem: cross
 
 一个新文件：`.github/workflows/zk-audit.yml`。仅此而已。不需要改代码、不需要在项目里增加依赖、不需要 Dockerfile，也不需要别的东西。
 
-这个 action（[`Battam1111/zk-doctor-action`](https://github.com/Battam1111/zk-doctor-action)）是一个复合 action(composite action)——它会在 GitHub 托管的 runner 上执行三步：
+这个 action（[`Battam1111/zk-doctor-action`](https://github.com/Battam1111/zk-doctor-action)）是一个复合 action(composite action),,它会在 GitHub 托管的 runner 上执行三步：
 
 1. 设置 Python 3.11。
 2. 通过 `pip` 从上游仓库(upstream repo)安装 `zk-pipeline-doctor`。
@@ -34,7 +34,7 @@ ecosystem: cross
 
 底层 CLI 采用 MIT 许可证，你既可以固定到可变的主版本标签(mutable major tag)（`@v1`），也可以固定到不可变的补丁版本标签(immutable patch tag)（`@v1.0.0`）。
 
-## 步骤 1 —— 添加工作流
+## 步骤 1 ,, 添加工作流
 
 在你的仓库中创建 `.github/workflows/zk-audit.yml`：
 
@@ -56,7 +56,7 @@ jobs:
 
 提交并推送。这样就是最小可用安装(minimum-viable install)。在你 push 后约 20 秒内，这个 action 就会出现在 **Actions** 标签页中，并把完整的 Markdown 报告打印到运行日志(run log)里。
 
-## 步骤 2 —— 阅读你的第一份报告
+## 步骤 2 ,, 阅读你的第一份报告
 
 打开工作流运行记录，点击 **audit** → **Run zk-doctor**。你会看到类似下面的内容：
 
@@ -97,7 +97,7 @@ Overall: 0.74
 
 每个检测器都会给出具体命令。不会出现“可以考虑改进 X”这种泛泛而谈的提示；如果它标记了某项问题，那就意味着你确实有可以立即执行的具体修复动作。
 
-## 步骤 3 —— 用分数阈值为 pull request 设置门禁
+## 步骤 3 ,, 用分数阈值为 pull request 设置门禁
 
 当你修复了明显的缺口之后，就可以提高标准。把工作流替换为：
 
@@ -114,18 +114,18 @@ jobs:
           threshold: '0.7'
 ```
 
-任何把分数降到 0.7 以下的 PR 都会导致 CI 失败。这确实很有用——比如某个贡献者新增了一个没有测试的新模块，或者不小心取消了某个依赖的版本固定，都会立刻看到失败，而不是等到发布当天手忙脚乱时才发现。
+任何把分数降到 0.7 以下的 PR 都会导致 CI 失败。这确实很有用,,比如某个贡献者新增了一个没有测试的新模块，或者不小心取消了某个依赖的版本固定，都会立刻看到失败，而不是等到发布当天手忙脚乱时才发现。
 
 根据你当前仓库的状态选择阈值：
 
 | Current score | Suggested threshold | Rationale                                                   |
 |--------------:|--------------------:|-------------------------------------------------------------|
-|         < 0.5 |                 0.0 | Don't gate yet — fix the bottom first, raise the bar later  |
+|         < 0.5 |                 0.0 | Don't gate yet; fix the bottom first, raise the bar later  |
 |     0.5 – 0.7 |                 0.5 | Lock in current state; new code can't regress               |
 |     0.7 – 0.85|                 0.7 | Standard for actively-developed libraries                   |
 |         ≥ 0.85|                 0.8 | High-bar for protocol-critical components                   |
 
-## 步骤 4 —— 在 PR 上评论报告
+## 步骤 4 ,, 在 PR 上评论报告
 
 这对评审者(reviewers)来说是最有用的开关(flag)。添加 `output:` 和 `comment-on-pr: 'true'`，再加上 `pull-requests: write` 权限：
 
@@ -191,11 +191,11 @@ steps:
 
 **自定义证明系统(proving systems)。** zk-doctor 默认识别 Plonk、Halo2、Groth16、Marlin，以及主要的 STARK 证明器(provers)。如果你构建在较少见的系统之上，语言检测器会回退到 “generic”，并跳过特定于语言的检查。其余五个检测器仍然适用。
 
-**自托管 runner。** 这个 action 是 composite action，并使用 `actions/setup-python@v5`——凡是支持这些的 runner 都可以运行，包括自托管环境。没有 Docker 依赖。
+**自托管 runner。** 这个 action 是 composite action，并使用 `actions/setup-python@v5`,,凡是支持这些的 runner 都可以运行，包括自托管环境。没有 Docker 依赖。
 
 ## 超越免费 action
 
-这个 action 和 CLI 都采用 MIT 许可证并可免费使用。如果你想要一份**完整叙述式审计(fully-narrated audit)**，包含专家解读(expert commentary)和精致的 HTML/PDF 报告——适合展示给安全评审人员、安全赞助方或 grant 资助方——也有付费版本：[$99 24-hour expert audit](https://battam1111.github.io/midnight-zk-cookbook/pricing.html)（[查看示例](https://battam1111.github.io/bounty-radar-data/audits/sample.html)）。
+这个 action 和 CLI 都采用 MIT 许可证并可免费使用。如果你想要一份**完整叙述式审计(fully-narrated audit)**，包含专家解读(expert commentary)和精致的 HTML/PDF 报告,,适合展示给安全评审人员、安全赞助方或 grant 资助方,,也有付费版本：[$99 24-hour expert audit](https://battam1111.github.io/midnight-zk-cookbook/pricing.html)（[查看示例](https://battam1111.github.io/bounty-radar-data/audits/sample.html)）。
 
 如果你需要对多个仓库进行持续监控(ongoing monitoring)，同一套引擎也驱动着 [zk-doctor-bot](https://github.com/Battam1111/zk-doctor-bot)，这是一个 GitHub App，会对每个 PR 做更深入、由模型叙述的分析(model-narrated analysis)。定价档位(pricing tiers)也记录在同一页面上。
 
@@ -207,6 +207,6 @@ ZK 代码很难调试(debug)，更难审计(audit)，而且几乎不可能在事
 
 ## 相关阅读
 
-- [zk-doctor CLI](https://github.com/Battam1111/zk-pipeline-doctor) —— 上游工具，也可以在本地使用
-- [bounty-radar live feed](https://battam1111.github.io/bounty-radar-data/) —— 公开的 ZK bounty radar
-- [bounty-radar-mcp](https://github.com/Battam1111/bounty-radar-mcp) —— 从 Claude/Cursor/任意 MCP 客户端查询该 feed
+- [zk-doctor CLI](https://github.com/Battam1111/zk-pipeline-doctor) ,, 上游工具，也可以在本地使用
+- [bounty-radar live feed](https://battam1111.github.io/bounty-radar-data/) ,, 公开的 ZK bounty radar
+- [bounty-radar-mcp](https://github.com/Battam1111/bounty-radar-mcp) ,, 从 Claude/Cursor/任意 MCP 客户端查询该 feed

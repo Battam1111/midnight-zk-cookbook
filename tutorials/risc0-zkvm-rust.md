@@ -16,7 +16,7 @@ That is the key mental shift for this tutorial:
 - with a **circuit DSL**, you express a computation as constraints
 - with a **zkVM**, you compile a program for a specialized virtual machine and prove that the VM executed it correctly
 
-Risc0’s zkVM is compelling when you already have useful Rust logic—parsers, cryptographic checks, business rules, state transition code—and you want to prove *“this exact code ran on this exact input and produced this output.”*
+Risc0’s zkVM is compelling when you already have useful Rust logic,parsers, cryptographic checks, business rules, state transition code,and you want to prove *“this exact code ran on this exact input and produced this output.”*
 
 This tutorial is aimed at Rust developers, not pure ZK newcomers. We’ll cover:
 
@@ -151,13 +151,13 @@ cargo risczero new sigcheck-demo
 
 That gives you a workspace with the usual Risc0 layout:
 
-- `host/` — normal Rust binary that builds input, invokes the prover, verifies the receipt
-- `methods/` — method embedding/build crate
-- `methods/guest/` — guest program compiled for the zkVM target
+- `host/`: normal Rust binary that builds input, invokes the prover, verifies the receipt
+- `methods/`: method embedding/build crate
+- `methods/guest/`: guest program compiled for the zkVM target
 
 For real projects, you usually add one more crate:
 
-- `core/` or `shared/` — pure Rust logic and shared types used by both host and guest
+- `core/` or `shared/`: pure Rust logic and shared types used by both host and guest
 
 That pattern is the sweet spot for reusing existing code.
 
@@ -620,7 +620,7 @@ You can keep normal host-side Rust, normal crates, normal tests, and narrow the 
 ## Where circuit DSLs still win
 
 ### Constraint efficiency
-If you know exactly what computation you want and it is stable—say:
+If you know exactly what computation you want and it is stable,say:
 - fixed hash gadget
 - fixed signature scheme
 - fixed rollup arithmetic
@@ -720,6 +720,6 @@ If you are evaluating it for production, the right question is not “is this mo
 
 > Is the ability to prove existing Rust execution worth the overhead?
 
-For many applications—bridges, client proofs, verifiable backends, off-chain policy engines, state transition proofs—the answer is yes.
+For many applications,bridges, client proofs, verifiable backends, off-chain policy engines, state transition proofs,the answer is yes.
 
 And if you already think in Rust modules, traits, tests, and library boundaries, Risc0 feels much more like software engineering than circuit engineering. That is its superpower.

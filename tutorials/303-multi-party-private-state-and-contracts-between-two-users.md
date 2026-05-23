@@ -596,12 +596,12 @@ This bounty is unusually strict: non-compiling Compact code is disqualifying. Wh
 
 ## Bounty spec coverage
 
-- **Written tutorial (3,000-4,000 words)** — entire draft
-- **Extending two-party patterns to N parties** — section “Extending two-party patterns to N parties”
-- **Map of commitments keyed by party identifier** — section “Using a map of commitments keyed by party identifier”
-- **Multiple users joining via `findDeployedContract`** — section “Letting multiple users join with `findDeployedContract`”
-- **Handling concurrent state updates** — section “Handling concurrent state updates”
-- **Real scenario: multi-sig treasury or staking pool** — section “Real scenario: a private multi-sig treasury”
-- **Working code repository with full contract, tests, and multi-party interaction examples** — section “Working examples and repository structure”
-- **All code must be tested and functional** — addressed in “Working examples and repository structure” and the test checklist
-- **Follow Midnight technical style / use official syntax only where verified** — addressed throughout, especially in “Using a map of commitments keyed by party identifier,” “Letting multiple users join with `findDeployedContract`,” and “Pitfalls and common errors”
+- **Written tutorial (3,000-4,000 words)**: entire draft
+- **Extending two-party patterns to N parties**: section “Extending two-party patterns to N parties”
+- **Map of commitments keyed by party identifier**: section “Using a map of commitments keyed by party identifier”
+- **Multiple users joining via `findDeployedContract`**: section “Letting multiple users join with `findDeployedContract`”
+- **Handling concurrent state updates**: section “Handling concurrent state updates”
+- **Real scenario: multi-sig treasury or staking pool**: section “Real scenario: a private multi-sig treasury”
+- **Working code repository with full contract, tests, and multi-party interaction examples**: section “Working examples and repository structure”
+- **All code must be tested and functional**: addressed in “Working examples and repository structure” and the test checklist
+- **Follow Midnight technical style / use official syntax only where verified**: addressed throughout, especially in “Using a map of commitments keyed by party identifier,” “Letting multiple users join with `findDeployedContract`,” and “Pitfalls and common errors”

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Aztec Accounts vs Aleo Records — Privacy Models Deep Dive"
+title: "Aztec Accounts vs Aleo Records; Privacy Models Deep Dive"
 slug: aztec-aleo-privacy-models
 ecosystem: cross
 ---
 
-# Aztec Accounts vs Aleo Records — Privacy Models Deep Dive
+# Aztec Accounts vs Aleo Records: Privacy Models Deep Dive
 
 Below is a protocol-engineering comparison of **Aztec** and **Aleo** as they actually model private state today: both are hybrids, but they put the “privacy primitive” in very different places.
 

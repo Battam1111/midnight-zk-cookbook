@@ -35,9 +35,9 @@ Let’s define the problem precisely.
 
 A user has a private credential made of:
 
-- `national_id` — private
-- `age` — private
-- `secret` — private randomness/salt known only by the user
+- `national_id`: private
+- `age`: private
+- `secret`: private randomness/salt known only by the user
 
 They have previously published a **credential commitment**:
 

@@ -9,7 +9,7 @@ ecosystem: cross
 
 If you write zero-knowledge code in Compact, Leo, Noir, Cairo, or Risc0 Rust, you live with a familiar problem: **you can't easily tell, at a glance, whether a ZK repo is production-ready**. The README looks fine. Tests pass. CI is green. And then six months later, someone tries to ship it and discovers the toolchain isn't pinned, the lockfile is missing, two detectors silently failed, and the security checklist was never run.
 
-This tutorial wires up [`zk-doctor`](https://github.com/Battam1111/zk-pipeline-doctor) as a GitHub Action so every push and every pull request automatically produces a health report. No background daemon, no extra account, no recurring cost. The audit is six independent detectors over language conventions, tests, CI, docs, security, and reproducibility — emitted as a single overall score plus a prioritized fix list with concrete commands.
+This tutorial wires up [`zk-doctor`](https://github.com/Battam1111/zk-pipeline-doctor) as a GitHub Action so every push and every pull request automatically produces a health report. No background daemon, no extra account, no recurring cost. The audit is six independent detectors over language conventions, tests, CI, docs, security, and reproducibility; emitted as a single overall score plus a prioritized fix list with concrete commands.
 
 By the end of this post your CI page will look like every other modern repo: green checkmark when the project is healthy, red X when it regresses, with a Markdown report attached to the PR explaining what to fix.
 
@@ -21,7 +21,7 @@ Estimated time: **5 minutes** if you already have GitHub Actions enabled.
 
 A new file: `.github/workflows/zk-audit.yml`. That's it. No code changes, no dependencies in your project, no Dockerfile, nothing else.
 
-The action ([`Battam1111/zk-doctor-action`](https://github.com/Battam1111/zk-doctor-action)) is a composite action — it runs three steps on the GitHub-hosted runner:
+The action ([`Battam1111/zk-doctor-action`](https://github.com/Battam1111/zk-doctor-action)) is a composite action; it runs three steps on the GitHub-hosted runner:
 
 1. Sets up Python 3.11.
 2. Installs `zk-pipeline-doctor` from the upstream repo via `pip`.
@@ -34,7 +34,7 @@ Optionally, it can also:
 
 The underlying CLI is MIT-licensed and you can pin to either a mutable major tag (`@v1`) or an immutable patch tag (`@v1.0.0`).
 
-## Step 1 — Add the workflow
+## Step 1: Add the workflow
 
 In your repo, create `.github/workflows/zk-audit.yml`:
 
@@ -56,7 +56,7 @@ jobs:
 
 Commit and push. That's the minimum-viable install. Within ~20 seconds of your push, the action will appear in the **Actions** tab and print the full Markdown report into the run log.
 
-## Step 2 — Read your first report
+## Step 2: Read your first report
 
 Open the workflow run, click **audit** → **Run zk-doctor**. You'll see something like:
 
@@ -97,7 +97,7 @@ Overall: 0.74
 
 Every detector ships with concrete commands. There are no "consider improving X" lines; if it's flagged, there is something specific you can do about it.
 
-## Step 3 — Gate pull requests on a score threshold
+## Step 3: Gate pull requests on a score threshold
 
 Once you've fixed the obvious gaps, raise the bar. Replace the workflow with:
 
@@ -114,18 +114,18 @@ jobs:
           threshold: '0.7'
 ```
 
-Any PR that drops the score below 0.7 will fail CI. This is genuinely useful — a contributor adding a new module without tests, or accidentally unpinning a dependency, will see the failure immediately rather than during a release-day scramble.
+Any PR that drops the score below 0.7 will fail CI. This is genuinely useful; a contributor adding a new module without tests, or accidentally unpinning a dependency, will see the failure immediately rather than during a release-day scramble.
 
 Pick the threshold based on where your repo is today:
 
 | Current score | Suggested threshold | Rationale                                                   |
 |--------------:|--------------------:|-------------------------------------------------------------|
-|         < 0.5 |                 0.0 | Don't gate yet — fix the bottom first, raise the bar later  |
+|         < 0.5 |                 0.0 | Don't gate yet; fix the bottom first, raise the bar later  |
 |     0.5 – 0.7 |                 0.5 | Lock in current state; new code can't regress               |
 |     0.7 – 0.85|                 0.7 | Standard for actively-developed libraries                   |
 |         ≥ 0.85|                 0.8 | High-bar for protocol-critical components                   |
 
-## Step 4 — Comment the report on PRs
+## Step 4: Comment the report on PRs
 
 This is the most useful flag for reviewers. Add `output:` and `comment-on-pr: 'true'`, plus the `pull-requests: write` permission:
 
@@ -191,11 +191,11 @@ steps:
 
 **Custom proving systems.** zk-doctor recognises Plonk, Halo2, Groth16, Marlin, and the major STARK provers by default. If you're building on a less-common system, the language detector will fall back to "generic" and skip the language-specific checks. The other five detectors still apply.
 
-**Self-hosted runners.** The action is composite and uses `actions/setup-python@v5` — it works on any runner that supports those, including self-hosted. There are no Docker dependencies.
+**Self-hosted runners.** The action is composite and uses `actions/setup-python@v5`: it works on any runner that supports those, including self-hosted. There are no Docker dependencies.
 
 ## Going beyond the free action
 
-The action and the CLI are MIT-licensed and free. If you want a **fully-narrated audit** with expert commentary and a polished HTML/PDF report — useful for showing security reviewers, sponsors, or grant funders — there's a paid version: [$99 24-hour expert audit](https://battam1111.github.io/midnight-zk-cookbook/pricing.html) ([see sample](https://battam1111.github.io/bounty-radar-data/audits/sample.html)).
+The action and the CLI are MIT-licensed and free. If you want a **fully-narrated audit** with expert commentary and a polished HTML/PDF report (useful for showing security reviewers, sponsors, or grant funders) there's a paid version: [$99 24-hour expert audit](https://battam1111.github.io/midnight-zk-cookbook/pricing.html) ([see sample](https://battam1111.github.io/bounty-radar-data/audits/sample.html)).
 
 For ongoing monitoring across many repos, the same engine powers [zk-doctor-bot](https://github.com/Battam1111/zk-doctor-bot), a GitHub App that reviews every PR with deeper, model-narrated analysis. Pricing tiers documented on the same page.
 
@@ -207,6 +207,6 @@ If you find a detector that's wrong or a fix command that doesn't apply to your 
 
 ## Related reading
 
-- [zk-doctor CLI](https://github.com/Battam1111/zk-pipeline-doctor) — the upstream tool, also usable locally
-- [bounty-radar live feed](https://battam1111.github.io/bounty-radar-data/) — public ZK bounty radar
-- [bounty-radar-mcp](https://github.com/Battam1111/bounty-radar-mcp) — query the feed from Claude/Cursor/any MCP client
+- [zk-doctor CLI](https://github.com/Battam1111/zk-pipeline-doctor); the upstream tool, also usable locally
+- [bounty-radar live feed](https://battam1111.github.io/bounty-radar-data/); public ZK bounty radar
+- [bounty-radar-mcp](https://github.com/Battam1111/bounty-radar-mcp); query the feed from Claude/Cursor/any MCP client
