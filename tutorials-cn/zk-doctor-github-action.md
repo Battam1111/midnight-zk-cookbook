@@ -124,8 +124,8 @@ jobs:
 | Current score | Suggested threshold | Rationale                                                   |
 |--------------:|--------------------:|-------------------------------------------------------------|
 |         < 0.5 |                 0.0 | Don't gate yet; fix the bottom first, raise the bar later  |
-|     0.5 – 0.7 |                 0.5 | Lock in current state; new code can't regress               |
-|     0.7 – 0.85|                 0.7 | Standard for actively-developed libraries                   |
+|     0.5 - 0.7 |                 0.5 | Lock in current state; new code can't regress               |
+|     0.7 - 0.85|                 0.7 | Standard for actively-developed libraries                   |
 |         ≥ 0.85|                 0.8 | High-bar for protocol-critical components                   |
 
 ## 步骤 4 ,, 在 PR 上评论报告
@@ -157,8 +157,8 @@ jobs:
 > Overall: 0.81
 >
 > ### tests (0.92)
-> – ✅ 14 tests
-> – ⚠️ new file `circuits/range_proof.nr` has no test coverage
+> - ✅ 14 tests
+> - ⚠️ new file `circuits/range_proof.nr` has no test coverage
 >
 > ### Top fixes
 > 1. Add at least one happy-path test for `range_proof.nr`. Suggested skeleton:
@@ -213,3 +213,29 @@ ZK 代码很难调试(debug)，更难审计(audit)，而且几乎不可能在事
 - [zk-doctor CLI](https://github.com/Battam1111/zk-pipeline-doctor) ,, 上游工具，也可以在本地使用
 - [bounty-radar live feed](https://battam1111.github.io/bounty-radar-data/) ,, 公开的 ZK bounty radar
 - [bounty-radar-mcp](https://github.com/Battam1111/bounty-radar-mcp) ,, 从 Claude/Cursor/任意 MCP 客户端查询该 feed
+
+<!-- cta-block:start -->
+
+---
+
+## 下一步去哪里
+
+读到这里很感谢。如果 "zk-doctor GitHub Action" 这个话题正好契合你目前的工作，下面三条路径任选其一：
+
+### 继续学习 ZK 生态
+
+完整的 [Midnight ZK Cookbook 索引](https://battam1111.github.io/midnight-zk-cookbook/) 覆盖 Midnight、Aleo、Aztec、Noir、risc0 共 17 篇英文教程加 4 篇中文翻译，按生态分组列出。
+
+### 接 ZK 生态 的付费活
+
+Bounty Radar 聚合 Algora、GitHub labels、Drips Wave、Code4rena、Bountycaster 的开放 ZK bounty。Bounty Radar 主页 [bounty-radar-data](https://battam1111.github.io/bounty-radar-data/) 或任一生态子 widget：`https://battam1111.github.io/bounty-radar-data/widget.html?ecosystem=<aleo|aztec|cairo|midnight|noir|risc0>`。免费版需轮询；[$19/月 Hobbyist 档](https://polar.sh/checkout/polar_c_BbZbN6eJnZ7rwsUfT1pMsj4lTftwnfMoGdWBo0KozKU) 会把一个 filter 实时推送到 Telegram。
+
+### 给自己的 ZK 项目做体检
+
+[zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor) 是 MIT 开源的免费 CLI，对任意 ZK 项目按测试、CI、文档、安全、可复现性、语言工具链六个维度打分（支持 Compact、Leo、Noir、Cairo 和 7 个 Rust zkVM）。用 [zk-doctor-action](https://github.com/Battam1111/zk-doctor-action) 接进 GitHub Action 可获得 PR diff 评论。[$15/月 Pro 档](https://github.com/Battam1111/zk-pipeline-doctor#pro-tier) 增加 4 个跨生态深度检测器（电路复杂度、证明系统坑点、verifier soundness、多文件一致性）。
+
+---
+
+*由 AI 辅助起草，作者在发布前逐行审阅。完整流程见 [DISCLOSURE](https://battam1111.github.io/midnight-zk-cookbook/DISCLOSURE.html)。*
+
+<!-- cta-block:end -->

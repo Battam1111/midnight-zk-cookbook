@@ -662,3 +662,29 @@ For app teams, the selection rule is simple:
 - choose **optimistic** if week-long canonical exits are acceptable and compatibility dominates,
 - choose **ZK** if faster trust-minimized finality and exits matter,
 - and among ZK choices, decide whether you want **compatibility-first** or **proof-efficiency-first**.
+
+<!-- cta-block:start -->
+
+---
+
+## Where to go next
+
+Thanks for reading this far. If "zkEVM rollup architecture" connected with where you are, three concrete next steps:
+
+### Learn more in the ZK ecosystem
+
+The full [Midnight ZK Cookbook index](https://battam1111.github.io/midnight-zk-cookbook/) has 17 tutorials across Midnight, Aleo, Aztec, Noir, and risc0 plus 4 Chinese translations. Adjacent tutorials are listed by ecosystem on that page.
+
+### Find paid work in the ZK ecosystem
+
+Bounty Radar tracks open ZK bounties across Algora, GitHub labels, Drips Wave, Code4rena, and Bountycaster. Browse the live ZK [bounty radar](https://battam1111.github.io/bounty-radar-data/) or any per-ecosystem widget at `https://battam1111.github.io/bounty-radar-data/widget.html?ecosystem=<aleo|aztec|cairo|midnight|noir|risc0>`. The free tier is poll-based; the [$19/mo Hobbyist tier](https://polar.sh/checkout/polar_c_BbZbN6eJnZ7rwsUfT1pMsj4lTftwnfMoGdWBo0KozKU) pushes one filter to your Telegram in real time.
+
+### Audit your own ZK pipeline
+
+[zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor) is the free MIT-licensed CLI that scores any ZK project on tests, CI, docs, security, reproducibility, and language toolchain (supports Compact, Leo, Noir, Cairo, and 7 Rust zkVMs). Drop it into a GitHub Action with [zk-doctor-action](https://github.com/Battam1111/zk-doctor-action) for diff-aware PR comments. The [$15/mo Pro tier](https://github.com/Battam1111/zk-pipeline-doctor#pro-tier) adds four cross-ecosystem deep detectors (circuit complexity, proving-system pitfalls, verifier soundness, multi-file consistency).
+
+---
+
+*Drafted with AI assistance and reviewed by the author before publishing. See [DISCLOSURE](https://battam1111.github.io/midnight-zk-cookbook/DISCLOSURE.html) for the full process.*
+
+<!-- cta-block:end -->

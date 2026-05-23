@@ -124,8 +124,8 @@ Pick the threshold based on where your repo is today:
 | Current score | Suggested threshold | Rationale                                                   |
 |--------------:|--------------------:|-------------------------------------------------------------|
 |         < 0.5 |                 0.0 | Don't gate yet; fix the bottom first, raise the bar later  |
-|     0.5 – 0.7 |                 0.5 | Lock in current state; new code can't regress               |
-|     0.7 – 0.85|                 0.7 | Standard for actively-developed libraries                   |
+|     0.5 - 0.7 |                 0.5 | Lock in current state; new code can't regress               |
+|     0.7 - 0.85|                 0.7 | Standard for actively-developed libraries                   |
 |         ≥ 0.85|                 0.8 | High-bar for protocol-critical components                   |
 
 ## Step 4: Comment the report on PRs
@@ -157,8 +157,8 @@ Now every PR gets a comment that looks like:
 > Overall: 0.81
 >
 > ### tests (0.92)
-> – ✅ 14 tests
-> – ⚠️ new file `circuits/range_proof.nr` has no test coverage
+> - ✅ 14 tests
+> - ⚠️ new file `circuits/range_proof.nr` has no test coverage
 >
 > ### Top fixes
 > 1. Add at least one happy-path test for `range_proof.nr`. Suggested skeleton:
@@ -213,3 +213,29 @@ If you find a detector that's wrong or a fix command that doesn't apply to your 
 - [zk-doctor CLI](https://github.com/Battam1111/zk-pipeline-doctor); the upstream tool, also usable locally
 - [bounty-radar live feed](https://battam1111.github.io/bounty-radar-data/); public ZK bounty radar
 - [bounty-radar-mcp](https://github.com/Battam1111/bounty-radar-mcp); query the feed from Claude/Cursor/any MCP client
+
+<!-- cta-block:start -->
+
+---
+
+## Where to go next
+
+Thanks for reading this far. If "zk-doctor GitHub Action" connected with where you are, three concrete next steps:
+
+### Learn more in the ZK ecosystem
+
+The full [Midnight ZK Cookbook index](https://battam1111.github.io/midnight-zk-cookbook/) has 17 tutorials across Midnight, Aleo, Aztec, Noir, and risc0 plus 4 Chinese translations. Adjacent tutorials are listed by ecosystem on that page.
+
+### Find paid work in the ZK ecosystem
+
+Bounty Radar tracks open ZK bounties across Algora, GitHub labels, Drips Wave, Code4rena, and Bountycaster. Browse the live ZK [bounty radar](https://battam1111.github.io/bounty-radar-data/) or any per-ecosystem widget at `https://battam1111.github.io/bounty-radar-data/widget.html?ecosystem=<aleo|aztec|cairo|midnight|noir|risc0>`. The free tier is poll-based; the [$19/mo Hobbyist tier](https://polar.sh/checkout/polar_c_BbZbN6eJnZ7rwsUfT1pMsj4lTftwnfMoGdWBo0KozKU) pushes one filter to your Telegram in real time.
+
+### Audit your own ZK pipeline
+
+[zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor) is the free MIT-licensed CLI that scores any ZK project on tests, CI, docs, security, reproducibility, and language toolchain (supports Compact, Leo, Noir, Cairo, and 7 Rust zkVMs). Drop it into a GitHub Action with [zk-doctor-action](https://github.com/Battam1111/zk-doctor-action) for diff-aware PR comments. The [$15/mo Pro tier](https://github.com/Battam1111/zk-pipeline-doctor#pro-tier) adds four cross-ecosystem deep detectors (circuit complexity, proving-system pitfalls, verifier soundness, multi-file consistency).
+
+---
+
+*Drafted with AI assistance and reviewed by the author before publishing. See [DISCLOSURE](https://battam1111.github.io/midnight-zk-cookbook/DISCLOSURE.html) for the full process.*
+
+<!-- cta-block:end -->
