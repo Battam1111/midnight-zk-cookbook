@@ -3,6 +3,9 @@ layout: default
 title: "RISC Zero zkVM: Running Existing Rust Code Inside a STARK"
 slug: risc0-zkvm-rust
 ecosystem: risc0
+description: "End-to-end risc0 program with a guest binary, a host driver, and proof verification, all in Rust."
+schema: article
+og_type: article
 ---
 
 # RISC Zero zkVM: Running Existing Rust Code Inside a STARK

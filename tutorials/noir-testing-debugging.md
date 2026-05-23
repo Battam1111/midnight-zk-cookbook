@@ -3,6 +3,9 @@ layout: default
 title: "Testing and Debugging Noir Circuits: The Honest Workflow"
 slug: noir-testing-debugging
 ecosystem: noir
+description: "Nargo test, common Noir circuit bugs, and how to instrument proofs for fast debugging."
+schema: article
+og_type: article
 ---
 
 # Testing and Debugging Noir Circuits: The Honest Workflow

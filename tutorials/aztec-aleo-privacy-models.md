@@ -3,6 +3,9 @@ layout: default
 title: "Aztec Accounts vs Aleo Records; Privacy Models Deep Dive"
 slug: aztec-aleo-privacy-models
 ecosystem: cross
+description: "Side-by-side: what is public, what is private, where you prove things, and which model fits which workload."
+schema: article
+og_type: article
 ---
 
 # Aztec Accounts vs Aleo Records: Privacy Models Deep Dive

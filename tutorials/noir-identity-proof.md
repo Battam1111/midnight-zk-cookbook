@@ -3,6 +3,9 @@ layout: default
 title: "Building a Zero-Knowledge Identity Proof in Noir"
 slug: noir-identity-proof
 ecosystem: noir
+description: "Zero-knowledge identity primitive in Noir: prove you are in a set without revealing which member you are."
+schema: article
+og_type: article
 ---
 
 # Building a Zero-Knowledge Identity Proof in Noir

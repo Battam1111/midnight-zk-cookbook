@@ -3,6 +3,9 @@ layout: default
 title: "5 分钟把 zk-doctor 接入你的 ZK 项目 CI"
 slug: zk-doctor-github-action
 ecosystem: cross
+description: "把 zk-doctor 加进 CI:5 分钟拿到 diff-aware PR 评论,推全 ZK 项目可重现性。"
+schema: article
+og_type: article
 ---
 
 # 5 分钟把 zk-doctor 接入你的 ZK 项目 CI

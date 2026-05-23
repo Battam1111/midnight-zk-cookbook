@@ -3,6 +3,9 @@ layout: default
 title: "Testing Aleo Programs Locally with snarkOS and snarkVM"
 slug: aleo-program-testing
 ecosystem: aleo
+description: "Three-layer Aleo testing: Leo unit tests, local snarkos network, and end-to-end transition coverage."
+schema: article
+og_type: article
 ---
 
 # Testing Aleo Programs Locally with snarkOS and snarkVM

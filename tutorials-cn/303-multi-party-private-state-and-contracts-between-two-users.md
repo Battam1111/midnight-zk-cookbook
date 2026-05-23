@@ -1,3 +1,13 @@
+---
+layout: default
+title: "多方私有状态:在 Midnight 上写两人合约"
+description: "为两位用户设计 Compact 合约,隔离私有状态、联合见证与可重现承诺。"
+schema: article
+ecosystem: midnight
+og_type: article
+lang: zh
+---
+
 # Midnight 上的多方私密状态与合约
 
 ## TL;DR

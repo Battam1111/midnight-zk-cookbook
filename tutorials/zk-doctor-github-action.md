@@ -3,6 +3,9 @@ layout: default
 title: "Add zk-doctor to your ZK project's CI in 5 minutes"
 slug: zk-doctor-github-action
 ecosystem: cross
+description: "Install the zk-doctor GitHub Action, get diff-aware PR comments, and ship reproducible ZK builds."
+schema: article
+og_type: article
 ---
 
 # Add zk-doctor to your ZK project's CI in 5 minutes

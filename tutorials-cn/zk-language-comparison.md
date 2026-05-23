@@ -3,6 +3,9 @@ layout: default
 title: "ZK 语言对比：Compact vs Leo vs Noir vs Cairo（2026）"
 slug: zk-language-comparison
 ecosystem: cross
+description: "并排对比四种主流 ZK 语言:语法、证明系统、生态成熟度,以及每种语言最适合的场景。"
+schema: article
+og_type: article
 ---
 
 # ZK 语言对比：Compact vs Leo vs Noir vs Cairo（2026）

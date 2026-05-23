@@ -3,6 +3,9 @@ layout: default
 title: "Your First Aleo Contract in Leo: Mappings, Records, and Transitions"
 slug: aleo-first-contract
 ecosystem: aleo
+description: "Bottom-up tour of Aleo Leo: build a working program with records, mappings, and transitions, then deploy it locally."
+schema: article
+og_type: article
 ---
 
 # Your First Aleo Contract in Leo: Mappings, Records, and Transitions

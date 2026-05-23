@@ -3,6 +3,9 @@ layout: default
 title: "ZK Rollup Architecture Explained: zkSync vs Linea vs Polygon zkEVM (2026)"
 slug: zk-rollup-architecture
 ecosystem: cross
+description: "Map prover, sequencer, settlement, and DA in a ZK rollup; how the boxes actually talk."
+schema: article
+og_type: article
 ---
 
 # ZK Rollup Architecture Explained: zkSync vs Linea vs Polygon zkEVM (2026)

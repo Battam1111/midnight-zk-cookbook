@@ -1,3 +1,12 @@
+---
+layout: default
+title: "Multi-Party Private State: Contracts Between Two Users on Midnight"
+description: "Design a two-party Compact contract with isolated private state, joint witnesses, and reproducible commitments."
+schema: article
+ecosystem: midnight
+og_type: article
+---
+
 # Multi-Party Private State and Contracts Between Two+ Users on Midnight
 
 ## TL;DR

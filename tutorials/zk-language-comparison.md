@@ -3,6 +3,9 @@ layout: default
 title: "ZK Language Comparison: Compact vs Leo vs Noir vs Cairo (2026)"
 slug: zk-language-comparison
 ecosystem: cross
+description: "Side-by-side: syntax, proving system, ecosystem maturity, and where each ZK language is strongest."
+schema: article
+og_type: article
 ---
 
 # ZK Language Comparison: Compact vs Leo vs Noir vs Cairo (2026)

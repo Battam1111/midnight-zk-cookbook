@@ -3,6 +3,9 @@ layout: default
 title: "Writing Your First Noir Circuit: Fields, Constraints, and Proofs"
 slug: noir-circuit-basics
 ecosystem: noir
+description: "Start-from-zero Noir circuit: field arithmetic, constraints, public/private inputs, and your first proof."
+schema: article
+og_type: article
 ---
 
 # Writing Your First Noir Circuit: Fields, Constraints, and Proofs
