@@ -74,7 +74,7 @@ Overall: 0.74
 
 ## ci  (0.60)
 - ✅ workflow `nargo-check.yml` present
-- ⚠️ runs on a single nargo version — recommend a matrix over the last 3 releases
+- ⚠️ runs on a single nargo version; recommend a matrix over the last 3 releases
 
 ## docs  (0.50)
 - ✅ README.md present
@@ -168,7 +168,7 @@ jobs:
 
 当评审者看到这条评论时，就可以在查看 diff 的同一上下文中直接按建议采取行动。报告会在每次 push 时重新生成，因此一旦贡献者修复了问题并再次 push，这条评论就会自动更新。
 
-## 步骤 5 —— 通过分数在不同 PR 之间进行比较
+## 步骤 5：通过分数在不同 PR 之间进行比较
 
 如果你把分数发布为 job output（计划在 v1.1 中支持）或 Markdown 徽章(badge)，就可以一眼对长生命周期分支(long-running branches)做合理性检查(sanity-check)。目前，审计步骤的退出码(exit code)已经足以告诉你是否发生了回退。
 

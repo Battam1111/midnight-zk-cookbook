@@ -74,7 +74,7 @@ Overall: 0.74
 
 ## ci  (0.60)
 - ✅ workflow `nargo-check.yml` present
-- ⚠️ runs on a single nargo version — recommend a matrix over the last 3 releases
+- ⚠️ runs on a single nargo version; recommend a matrix over the last 3 releases
 
 ## docs  (0.50)
 - ✅ README.md present
@@ -168,7 +168,7 @@ Now every PR gets a comment that looks like:
 
 When a reviewer sees the comment they can act on the suggestion in the same context as the diff. The report is regenerated on every push, so once the contributor fixes the issue and pushes again, the comment auto-updates.
 
-## Step 5 — Compare across PRs by score
+## Step 5: Compare across PRs by score
 
 If you publish the score as a job output (planned for v1.1) or a Markdown badge, you can sanity-check long-running branches at a glance. For now, the audit step's exit code already tells you whether you're regressing.
 
