@@ -25,7 +25,7 @@ Before any tutorial reaches the live site, it must pass an automated
 - "I cannot honestly claim..." (model self-disclosure)
 - "As an AI..." (model identity disclosure)
 
-The linter is open source — see
+The linter is open source, see
 [`bounty-agent/src/bounty/content_pipeline/ai_tell_linter.py`](https://github.com/Battam1111)
 in the private engine repo. The same patterns are blocked at publish time;
 they cannot reach this cookbook even if a draft slips past review.
@@ -54,7 +54,7 @@ The infrastructure has been corrected as of 2026-05-23:
 The three problem tutorials had their conversational tails stripped on
 2026-05-23; the underlying technical content remains. If you spot any
 remaining accuracy issue in any tutorial, please open an issue against
-this repo — corrections are taken seriously.
+this repo, corrections are taken seriously.
 
 ## What Frontier API still does
 
@@ -65,4 +65,4 @@ Internal-only scoring within `bounty-agent`:
 
 These outputs never become public prose, so hallucination risk is bounded.
 
-— Battam1111
+- Battam1111
