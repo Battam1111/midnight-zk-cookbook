@@ -16,9 +16,9 @@ og_type: website
 
 ## What's here
 
-- **17 tutorials** — read freely (see below). Or grab the [$15 bundle](pricing.html#bundle) for offline reading + companion code.
-- **bounty-radar feed** — live ZK bounty firehose updated every 30 min. Free to view. [$19/mo](pricing.html#radar) for real-time Telegram push + ecosystem filters.
-- **zk-pipeline-doctor** — open-source CLI scoring your ZK repo on 6 dimensions. Run `pip install` and audit yourself for free. [$99 pre-flight](pricing.html#audit) if you want a human-narrated report.
+- **17 tutorials**: read freely (see below). Or grab the [$15 bundle](pricing.html#bundle) for offline reading + companion code.
+- **bounty-radar feed**: live ZK bounty firehose updated every 30 min. Free to view. [$19/mo](pricing.html#radar) for real-time Telegram push + ecosystem filters.
+- **zk-pipeline-doctor**: open-source CLI scoring your ZK repo on 6 dimensions. Run `pip install` and audit yourself for free. [$99 pre-flight](pricing.html#audit) if you want a human-narrated report.
 
 ## Tutorials by ecosystem
 
@@ -38,7 +38,7 @@ og_type: website
 {% endif %}
 {% endfor %}
 
-(if you don't see a list above, your Pages build hasn't refreshed yet — try [direct tutorial listing](tutorials/).)
+(if you don't see a list above, your Pages build hasn't refreshed yet; try [direct tutorial listing](tutorials/).)
 
 ## Companion open-source tools
 

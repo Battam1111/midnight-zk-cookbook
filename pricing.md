@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Pricing — ZK Cookbook + Bounty Radar Pro"
-description: "All products from the ZK Cookbook + Bounty Radar Pro stack — from $15 one-shot to $497/mo team tier. Pick what fits."
+title: "Pricing; ZK Cookbook + Bounty Radar Pro"
+description: "All products from the ZK Cookbook + Bounty Radar Pro stack (from $15 one-shot to $497/mo team tier). Pick what fits."
 schema: product
 og_type: website
 description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Project Pre-Flight Report, and Bounty Radar subscriptions."
@@ -104,9 +104,9 @@ description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Proj
 
 </div>
 
-<h2 id="radar">Bounty Radar — Monthly subscriptions <span class="tag recurring">recurring</span></h2>
+<h2 id="radar">Bounty Radar; Monthly subscriptions <span class="tag recurring">recurring</span></h2>
 
-<p>The free public feed at <a href="https://battam1111.github.io/bounty-radar-data/">battam1111.github.io/bounty-radar-data</a> refreshes every 30 minutes — fine if you check it manually. The paid tiers push alerts to you so you don't miss a bounty.</p>
+<p>The free public feed at <a href="https://battam1111.github.io/bounty-radar-data/">battam1111.github.io/bounty-radar-data</a> refreshes every 30 minutes (fine if you check it manually). The paid tiers push alerts to you so you don't miss a bounty.</p>
 
 <div style="margin: 1rem 0; overflow-x: auto;">
 <table style="border-collapse: collapse; width: 100%; font-size: 14px;">
@@ -117,13 +117,13 @@ description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Proj
 <tr><td style="padding: 6px 12px;">Live web feed at battam1111.github.io/bounty-radar-data/</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td style="padding: 6px 12px;">JSON / RSS / per-ecosystem sub-feeds</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td style="padding: 6px 12px;">MCP server access (Claude / Cursor)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td style="padding: 6px 12px;"><strong>Push to your Telegram on new match</strong></td><td>—</td><td>1 filter</td><td>unlimited filters</td><td>unlimited filters</td></tr>
-<tr><td style="padding: 6px 12px;"><strong>Webhook delivery</strong> (HMAC-signed, to your URL)</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
-<tr><td style="padding: 6px 12px;">Filter by ecosystem / reward / keywords</td><td>—</td><td>1 ecosystem</td><td>combine all</td><td>combine all</td></tr>
-<tr><td style="padding: 6px 12px;">Weekly digest email</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
-<tr><td style="padding: 6px 12px;">Shared Slack / Discord channel for team</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
-<tr><td style="padding: 6px 12px;">Custom detector requests for zk-pipeline-doctor</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
-<tr><td style="padding: 6px 12px;">Seats included</td><td>—</td><td>1</td><td>1</td><td>up to 5</td></tr>
+<tr><td style="padding: 6px 12px;"><strong>Push to your Telegram on new match</strong></td><td>,</td><td>1 filter</td><td>unlimited filters</td><td>unlimited filters</td></tr>
+<tr><td style="padding: 6px 12px;"><strong>Webhook delivery</strong> (HMAC-signed, to your URL)</td><td>,</td><td>,</td><td>✓</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">Filter by ecosystem / reward / keywords</td><td>,</td><td>1 ecosystem</td><td>combine all</td><td>combine all</td></tr>
+<tr><td style="padding: 6px 12px;">Weekly digest email</td><td>,</td><td>,</td><td>✓</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">Shared Slack / Discord channel for team</td><td>,</td><td>,</td><td>,</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">Custom detector requests for zk-pipeline-doctor</td><td>,</td><td>,</td><td>,</td><td>✓</td></tr>
+<tr><td style="padding: 6px 12px;">Seats included</td><td>,</td><td>1</td><td>1</td><td>up to 5</td></tr>
 <tr><td style="padding: 6px 12px;"></td><td></td><td><a class="btn" href="https://polar.sh/checkout/polar_c_BbZbN6eJnZ7rwsUfT1pMsj4lTftwnfMoGdWBo0KozKU">Subscribe</a></td><td><a class="btn" href="https://polar.sh/checkout/polar_c_CKKhyOq11BHuG2AulflWkm53YU98pLdrNo22h3OlB4O">Subscribe</a></td><td><a class="btn" href="https://polar.sh/checkout/polar_c_bT1FpxfzlShI3PcdHxTrHeJf8EVO1AFaWbFc90Z9mfC">Subscribe</a></td></tr>
 </tbody>
 </table>
@@ -131,7 +131,7 @@ description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Proj
 
 <p style="font-size: 13px; color: #666;">After subscribing, you receive a one-time setup email with your Telegram bot link or webhook endpoint registration command. All deliveries are HMAC-signed; you control the secret. Cancel anytime from your Polar customer portal.</p>
 
-<h2>Monthly subscriptions — checkout shortcuts <span class="tag recurring">recurring</span></h2>
+<h2>Monthly subscriptions; checkout shortcuts <span class="tag recurring">recurring</span></h2>
 <div class="pricing-grid">
 
 <div class="card">
@@ -185,10 +185,10 @@ description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Proj
 <div class="trust">
 <h3>Why trust this?</h3>
 <ul>
-<li><strong>Live infrastructure</strong> — the 24/7 scanner powering all of this runs on a Mac mini, 11 ecosystem polls every 2 minutes, public feed updated every 30 min at <a href="https://battam1111.github.io/bounty-radar-data/">battam1111.github.io/bounty-radar-data</a></li>
-<li><strong>OSS proven</strong> — zk-pipeline-doctor (MIT) + bounty-radar-mcp (MIT) + this very cookbook are public; you can audit the methodology before purchasing</li>
-<li><strong>Real submissions</strong> — the Playbook chapter on win/loss analysis is grounded in 7 LIVE Midnight bounty submissions, not theory</li>
-<li><strong>Polar Merchant of Record</strong> — Polar.sh handles tax, refunds, and EU VAT; not a fly-by-night Stripe link</li>
+<li><strong>Live infrastructure</strong>; the 24/7 scanner powering all of this runs on a Mac mini, 11 ecosystem polls every 2 minutes, public feed updated every 30 min at <a href="https://battam1111.github.io/bounty-radar-data/">battam1111.github.io/bounty-radar-data</a></li>
+<li><strong>OSS proven</strong>; zk-pipeline-doctor (MIT) + bounty-radar-mcp (MIT) + this very cookbook are public; you can audit the methodology before purchasing</li>
+<li><strong>Real submissions</strong>; the Playbook chapter on win/loss analysis is grounded in 7 LIVE Midnight bounty submissions, not theory</li>
+<li><strong>Polar Merchant of Record</strong>; Polar.sh handles tax, refunds, and EU VAT; not a fly-by-night Stripe link</li>
 </ul>
 </div>
 
@@ -201,7 +201,7 @@ description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Proj
 
 <div class="faq">
 <h4>Do you offer refunds?</h4>
-<p>Yes — Polar.sh's 14-day refund policy applies. For one-shot products (Cookbook, Playbook, Pre-Audit), reach out via email if you're not satisfied.</p>
+<p>Yes (Polar.sh's 14-day refund policy applies). For one-shot products (Cookbook, Playbook, Pre-Audit), reach out via email if you're not satisfied.</p>
 </div>
 
 <div class="faq">
@@ -216,7 +216,7 @@ description: "Pricing for ZK Cookbook bundle, ZK Bounty Hunter Playbook, ZK Proj
 
 <div class="faq">
 <h4>What if a bounty I want isn't in the radar?</h4>
-<p>Reach out — we add new sources every couple of weeks. Pro and Team subscribers can request specific ecosystem coverage; Team tier includes custom detector requests for zk-pipeline-doctor too.</p>
+<p>Reach out (we add new sources every couple of weeks). Pro and Team subscribers can request specific ecosystem coverage; Team tier includes custom detector requests for zk-pipeline-doctor too.</p>
 </div>
 
 <div class="faq">

@@ -25,7 +25,7 @@ The tutorials on the Pages site are free. **You pay for convenience:**
 | Pay for | What you get |
 |---|---|
 | **$15 Bundle** | Single Markdown + 8 companion code repos zipped. Offline-readable. No 17 separate Pages loads. |
-| **$29 Playbook** | The strategy PDF *behind* the tutorials — how to find and win ZK bounties, 7 chapters / 50+ pages |
+| **$29 Playbook** | The strategy PDF *behind* the tutorials; how to find and win ZK bounties, 7 chapters / 50+ pages |
 | **$49 Cookbook + zk-doctor Pro** | Bundle + Pro license for [zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor) (priority detector updates) |
 | **$99 Pre-Flight Audit** | Your repo's 6-detector report + LLM narrative + author review, delivered in 24h. **Pre-flight before a $10-50k human audit; NOT a substitute.** |
 | **$19/97/497 Bounty Radar (monthly)** | Real-time ZK bounty alerts → Telegram / webhook / Slack. See [tier comparison](https://battam1111.github.io/midnight-zk-cookbook/pricing.html#radar). |
@@ -34,10 +34,10 @@ All payments via [Polar.sh](https://polar.sh) (Merchant of Record). 14-day money
 
 ## Open-source companions
 
-- [**zk-pipeline-doctor**](https://github.com/Battam1111/zk-pipeline-doctor) — CLI: 8 detectors across Compact / Leo / Noir / Cairo / SP1 / Plonky3 / Stwo / Solidity-verifier (MIT)
-- [**zk-doctor-action**](https://github.com/Battam1111/zk-doctor-action) — GitHub Action wrapping the CLI; diff-aware PR comments, fail-on-regression gate (MIT)
-- [**bounty-radar-data**](https://github.com/Battam1111/bounty-radar-data) — Live ZK bounty feed (JSON / RSS / per-ecosystem sub-feeds) (data, CC0)
-- [**bounty-radar-mcp**](https://github.com/Battam1111/bounty-radar-mcp) — MCP server: query the radar from Claude Desktop / Cursor / Windsurf (MIT)
+- [**zk-pipeline-doctor**](https://github.com/Battam1111/zk-pipeline-doctor); CLI: 8 detectors across Compact / Leo / Noir / Cairo / SP1 / Plonky3 / Stwo / Solidity-verifier (MIT)
+- [**zk-doctor-action**](https://github.com/Battam1111/zk-doctor-action); GitHub Action wrapping the CLI; diff-aware PR comments, fail-on-regression gate (MIT)
+- [**bounty-radar-data**](https://github.com/Battam1111/bounty-radar-data); Live ZK bounty feed (JSON / RSS / per-ecosystem sub-feeds) (data, CC0)
+- [**bounty-radar-mcp**](https://github.com/Battam1111/bounty-radar-mcp); MCP server: query the radar from Claude Desktop / Cursor / Windsurf (MIT)
 
 ## Disclosure
 
